@@ -4,13 +4,16 @@
 Task1.
 
 Разработать unit-тесты с использованием как NUnit Framework, так и MS Unit Test Framework для тестирования метода из задачи 3 дня 3 
+
 [Day 3](https://github.com/veronika-navros/NET.S.2017.01.Navros.03)
 
 
 Task 2.
 
 Разработать unit-тесты для тестирования методов задач (дни 2-3)
+
 [Day 2](https://github.com/veronika-navros/NET.S.2017.01.Navros.02)
+
 [Day 3](https://github.com/veronika-navros/NET.S.2017.01.Navros.03)
 
 
