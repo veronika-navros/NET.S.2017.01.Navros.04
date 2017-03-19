@@ -53,7 +53,7 @@ namespace Task3_4
                 throw new ArgumentException();
             }
 
-            return FindRootOfNDegree(number, rootDegree, eps);
+            return NewtonMethod(number, rootDegree, eps);
         }
 
         #endregion
@@ -153,13 +153,13 @@ namespace Task3_4
         }
 
         /// <summary>
-        /// Finds root of specified degree of the number
+        /// Finds root of specified degree of the number using Newton's method
         /// </summary>
         /// <param name="number">Source number</param>
         /// <param name="rootDegree">Root degree</param>
         /// <param name="eps">Accuracy of calculations</param>
         /// <returns>Root of specified degree of source number</returns>
-        private static double FindRootOfNDegree(double number, int rootDegree, double eps = 0.0001)
+        private static double NewtonMethod(double number, int rootDegree, double eps = 0.0001)
         {
             double temp1 = number / rootDegree;
             double temp2 = (1 / (double)rootDegree) * ((rootDegree - 1) * temp1 + number / Math.Pow(temp1, rootDegree - 1));
