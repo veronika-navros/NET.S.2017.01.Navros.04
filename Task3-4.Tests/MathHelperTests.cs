@@ -43,6 +43,10 @@ namespace Task3_4.Tests
         [TestCase(444, -4)]
         [TestCase(843, 0)]
         [TestCase(0, 0)]
+        [TestCase(25, 3, 1)]
+        [TestCase(-25, 3, 0)]
+        [TestCase(25, -3, -1)]
+        [TestCase(25, 3, 231)]
         public void SqrtN_ThrowsArgumentException(double number, int rootDegree, double eps = 0.0001)
         {
             Assert.Throws<ArgumentException>(() => MathHelper.SqrtN(number, rootDegree, eps));

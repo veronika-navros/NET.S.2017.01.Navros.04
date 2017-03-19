@@ -48,6 +48,11 @@ namespace Task3_4
                 throw new ArgumentException();
             }
 
+            if (eps >= 1 || eps <= 0)
+            {
+                throw new ArgumentException();
+            }
+
             return FindRootOfNDegree(number, rootDegree, eps);
         }
 
